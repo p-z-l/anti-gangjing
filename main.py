@@ -24,11 +24,12 @@ def substitute_statement(statement, substitution_dict):
 
 
 def main():
-    statement = input()
+    statement = input("\033[34m>>> \033[0m")
     statement = substitute_statement(statement, substitution_words)
     print(statement)
 
 
 if __name__ == "__main__":
+    print("\033[31m===== anti-gangjing =====\n一个可以把反进化论杠精怼死的 Python 脚本")
     while True:
         main()
